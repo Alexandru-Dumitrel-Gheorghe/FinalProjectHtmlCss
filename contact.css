@@ -1,0 +1,236 @@
+body{
+  font-family: yanone Kaffesatz;
+  font-size: 1.6rem;
+}
+.limegreen{
+  color: limegreen;
+}
+
+.navbar{
+  border-bottom: 1px solid limegreen;
+}
+
+.carousel{
+  border-bottom: 1px solid #888;
+}
+.nav-link{
+  cursor: pointer;
+}
+
+.nav-link:active,
+.nav-link:hover{
+  color: limegreen !important;
+}
+
+
+.icon-link:active svg,
+.icon-link-hover svg{
+color: limegreen;
+}
+
+#products, #about{
+  padding-top: 100px;
+}
+
+.container-contact{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  width: 100%;
+  height: 550px;
+  max-width: 820px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba (0,0,0,.4) ;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  z-index: 1000;
+}
+
+.contact{
+  background: #fff;
+}
+
+.submit-form{
+  background:#3B71CA ;
+}
+
+.first-text{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 35px;
+  color: #3B71CA;
+  font-weight: 600;
+}
+
+.image{
+  height: 300px;
+  width: 350px;
+  
+}
+
+.social-media{
+  display: flex;
+  list-style: none;
+  padding-left: 15px;
+  font-size: 24px;
+  margin-top: 50px;
+
+}
+
+.social-media i {
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  transition: .3s;
+  color: #3B71CA;
+}
+
+.social-media i :hover{
+  background:#3B71CA;
+  color: #3B71CA ;
+}
+
+.social-media a{
+  text-decoration: none;
+
+}
+
+.secnd-text{
+  font-weight: 500px;
+  color:  #3B71CA;
+  padding-left: 29px;
+  padding-top: 800px;
+}
+
+.third-text{
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.form{
+  padding: 0 50px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.input-box{
+  height: 40px;
+  width: 70%;
+  margin: 30px 0;
+  position:relative;
+  margin-left: 50px;
+}
+
+.input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  padding-left: 10px;
+  transform: translatey(-50%);
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+}
+
+.input-box .input:focus ~ label, 
+.input-box .input:valid ~ label{
+  top: -1px;
+  left: 10px;
+  background: #3B71CA;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 5px;
+}
+
+textarea.input{
+  resize: none;
+  height: 150px;
+  overflow: auto;
+}
+
+.btn-2{
+  position: relative;
+  background: limegreen;
+  top: 100px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 45px;
+  width: 25%;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+@media (max-width:850px) {
+  .item{
+    grid-template-columns: 1fr;
+  }
+  .contact{
+    display: none;
+  }
+  .text{
+    font-size: 40px;
+    text-align: center;
+  }
+  .btn{
+    width: 25%;
+    height: 40px;
+    font-size:12px;
+  }
+}
+
+@media (max-width:480px) {
+  .item{
+    grid-template-columns: 1fr;
+  }
+  .contact{
+    display: none;
+  }
+  .text{
+    font-size: 20px;
+    text-align: center;
+  }
+  .btn{
+    width: 20%;
+    height: 40px;
+    font-size:12px;
+  }
+}
+
+.footer{
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 1px solid limegreen;  
+}
+
