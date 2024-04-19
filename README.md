@@ -2,3 +2,4 @@
 
 First try to add my Project
 last one
+test new settings
